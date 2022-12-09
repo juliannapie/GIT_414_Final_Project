@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Foods Mart</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- all Icons are from https://tablericons.com/ -->
+<body>
+    <a class="skip" href="#intro">Skip to main content</a>
+    <header>
+        <h1>All Foods Mart</h1>
+        <nav>
+            <h2>Main Navigation</h2>
+            <input id="menuToggle" type="checkbox">
+            <label class='menuBtnContainer' for="menuToggle">
+                <span class="menuBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                </span>
+            </label>
+                    
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#intro">Weekly Ad</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#coupons">Coupons</a></li>
+                <li><a href="#club">Coupon Club</a></li>
+            </ul>
+        </nav>
+        <div id="shoppingCart">
+            <a href="#" title="Shopping Cart">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="6" cy="19" r="2" />
+                    <circle cx="17" cy="19" r="2" />
+                    <path d="M17 17h-11v-14h-2" />
+                    <path d="M6 5l14 1l-1 7h-13" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div id="AdInfo">
+                <h2>Weekly Advertisement</h2>
+                <p>This week's specials are just in time for back to school. Everything you need to get the kids ready for their first day from school supplies to healthy lunches.</p>
+                <a href="" class="button">View Weekly Ad</a>
+            </div>
+        </section>
+
+        <section id="shop">
+            <h2>Shop Categories</h2>
+
+            <div id="categories">
+                <section id="meat">
+                    <h3>Meat</h3>
+                    <a href="#">
+                        <img 
+                            src="images/meatL.png"
+                            alt=""
+                            srcset="
+                                images/meatS.png 300w, 
+                                images/meatM.png 600w,
+                                images/meatL.png 1024w, 
+                                images/meatXL.png 2000w
+                                "
+
+                            sizes="(min-width: 400px) 100vw, (min-width: 800px) 50vw, (min-width:1280px) 50vw" 
+                        >
+                    </a>
+                </section>
+
+                <section id="seafood">
+                    <h3>Seafood</h3>
+                    <a href="#">
+                        <img src="images/seafoodL.png"
+                            alt=""
+                            srcset="
+                                images/seafoodS.png 300w, 
+                                images/seafoodM.png 600w,
+                                images/seafoodL.png 1024w, 
+                                images/seafoodXL.png 2000w
+                                "
+                            sizes="(min-width: 400px) 100vw, (min-width: 800px) 50vw, (min-width:1280px) 50vw"
+                        >
+                    </a>
+                </section>
+
+                <section id="dairy">
+                    <h3>Dairy</h3>
+                    <a href="#">
+                        <img src="images/dairyL.png"
+                            alt=""
+                            srcset="
+                                images/dairyS.png 300w, 
+                                images/dairyM.png 600w,
+                                images/dairyL.png 1024w, 
+                                images/dairyXL.png 2000w
+                                "
+                            sizes="(min-width: 400px) 100vw, (min-width: 800px) 50vw, (min-width:1280px) 50vw"
+                        >
+                    </a>
+                </section>
+                <section id="produce"> 
+                    <h3>Produce</h3>
+                    <a href="#">
+                        <img src="images/produceL.jpg"
+                            alt=""
+                            srcset="
+                                images/produceS.png 300w, 
+                                images/produceM.png 600w,
+                                images/produceL.png 1024w, 
+                                images/produceXL.png 2000w
+                                "
+                            sizes="(min-width: 400px) 100vw, (min-width: 800px) 50vw, (min-width:1280px) 50vw"
+                        >
+                    </a>
+                </section>
+
+                <section id="bakery">
+                    <h3>Bakery</h3>
+                    <a href="#">
+                        
+                        <img src="images/bakeryL.png"
+                            alt=""
+                            srcset="
+                            images/bakeryS.png 300w, 
+                            images/bakeryM.png 600w,
+                            images/bakeryL.png 1024w, 
+                            images/bakeryXL.png 2000w
+                            "
+                            sizes="(min-width: 400px) 100vw, (min-width: 800px) 50vw, (min-width:1280px) 50vw"
+                        >
+                    </a>
+                </section>
+
+                <section id="beverages">
+                    <h3>Beverages</h3>
+                    <a href="#">
+                    <img src="images/beveragesL.png"
+                    alt=""
+                    srcset="
+                        images/beveragesS.png 300w, 
+                        images/beveragesM.png 600w,
+                        images/beveragesL.png 1024w, 
+                        images/beveragesXL.png 2000w
+                        "
+                    sizes="(min-width: 400px) 100vw, (min-width: 800px) 50vw, (min-width:1280px) 50vw"
+                    >
+                    </a>
+                </section>
+            </div>
+            <a href="" class="button">View All</a>
+        </section>
+
+        <section id="coupons">
+            <h2>Coupons</h2>
+            <p>All store coupons are accepted until their expiration date. Don't miss DOUBLE COUPONS every Tuesday. In-store only.</p>
+
+            <section>
+                <h3>Salad Dressing</h3>
+                <div class="couponClip">
+                    <h4>Save &dollar;</h4>
+                    <img src="images/dressing.png" alt="">
+                </div>
+                <h4>Exp. 12/3/2021</h4> 
+                <p>Buy 2, get 2 with coupon</p>
+                <button class="clipBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="6" cy="7" r="3" />
+                        <circle cx="6" cy="17" r="3" />
+                        <line x1="8.6" y1="8.6" x2="19" y2="19" />
+                        <line x1="8.6" y1="15.4" x2="19" y2="5" />
+                    </svg>
+                    Clip
+                </button> 
+            </section>
+
+            <section>
+                <h3>Honey</h3>
+                <div class="couponClip">
+                    <h4>Save &dollar;</h4>
+                    <img src="images/honey.png" alt="">
+                </div>
+                <h4>Exp. 1/3/2022</h4>
+                <p>Save $0.35</p>    
+                <button class="clipBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="6" cy="7" r="3" />
+                        <circle cx="6" cy="17" r="3" />
+                        <line x1="8.6" y1="8.6" x2="19" y2="19" />
+                        <line x1="8.6" y1="15.4" x2="19" y2="5" />
+                    </svg>
+                    Clip
+                </button> 
+            </section>
+
+            <section>
+                <h3>Marinara</h3>
+                <div class="couponClip">
+                    <h4>Save &dollar;</h4>
+                    <img src="images/marinara.png" alt="">
+                </div>
+                <h4>Exp. 12/3/2021</h4>
+                <p>Buy 1, get 1. Mix and match.</p>
+                <button class="clipBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="6" cy="7" r="3" />
+                        <circle cx="6" cy="17" r="3" />
+                        <line x1="8.6" y1="8.6" x2="19" y2="19" />
+                        <line x1="8.6" y1="15.4" x2="19" y2="5" />
+                    </svg>
+                    Clip
+                </button> 
+            </section>
+            
+            <section>
+                <h3>Mustard</h3>
+                <div class="couponClip">
+                    <h4>Save &dollar;</h4>
+                    <img src="images/mustard.png" alt="">
+                </div>  
+                <h4>Exp. 12/31/2021</h4>
+                <p>Save $1.00 on 48oz. Size. Limit 1 per customer</p>
+                <button class="clipBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="6" cy="7" r="3" />
+                        <circle cx="6" cy="17" r="3" />
+                        <line x1="8.6" y1="8.6" x2="19" y2="19" />
+                        <line x1="8.6" y1="15.4" x2="19" y2="5" />
+                    </svg>
+                    Clip
+                </button>  
+            </section>
+            
+            <a href="" class="button">View All</a>
+        </section>
+
+        <section id="club" >
+            <h2>Coupon Club</h2>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post" >
+                <div>
+                <label for="fName">First name<span class="required">*</span></label>
+                <input type="text" name="fName" id="fName" autocomplete="name" placeholder="First Name" required>
+                </div>
+
+                <div>
+                <label for="lName">Last Name<span class="required">*</span></label>
+                <input type="text" name="lName" id="lName" placeholder="Last Name" required>
+                </div>
+
+                <div>
+                <label for="userEmail">Email Address<span class="required">*</span></label>
+                <input type="email" name="userEmail" id="userEmail" placeholder="Email Address" required>
+                </div>
+
+                <input type="submit" name="submit" id="submit" value="Sign Up">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <h2>All Food Mart</h2>
+            <address>
+                123 Mockup Street <br>
+                San Francisco, CA 10000 <br>
+                (555) 555-5555 <br>
+            </address>
+
+            <small>Copyright &copy; 2022 All Foot Mart.</small>
+            <small>All rights reserved.</small>
+        </section>
+        <section>
+            <h2>Social Media</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <polyline points="3 7 12 13 21 7" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
+
