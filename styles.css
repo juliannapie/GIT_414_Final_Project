@@ -48,32 +48,31 @@ table {
 }
 
 :root {
-    --Blueberry: #1F4373; 
-    --Veg:#96A61F;
-    --Grain:#BF9004;
-    --Toast:#73532D;
-    --Cranberry: #A64037; 
-    --White: #fff;
-    --Black: #111; 
-    --font: 'Public Sans', sans-serif;;
-    --heading_Font: 800; 
-    --body_Font: 500; 
+    --blueberry: #1F4373; 
+    --veg:#96A61F;
+    --grain:#BF9004;
+    --toast:#73532D;
+    --cranberry: #A64037; 
+    --white: #fff;
+    --black: #111; 
+    --heading_font: 800; 
+    --body_font: 500; 
 }
 
 /*----------Generic Styles---------- */
 body {
     margin: 0;
     padding: 0;
-    font-family: var(--font);
-    font-weight: var(--body_Font);
+    font-family: 'Public Sans', sans-serif;
+    font-weight: var(--body_font);
     font-size: 1.75em;
     line-height: 1.6em;
-    background-color: var(--White);
+    background-color: var(--white);
     min-width: 320px;
 }
 
 h1, h2, h3 {
-    font-weight: var(--heading_Font);
+    font-weight: var(--heading_font);
 }
 
 h1 {
@@ -93,7 +92,7 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
 }
 
 p {
@@ -114,8 +113,8 @@ p {
     height: 1.5em;
     width: 70%;
     font-size: .8em;
-    border: 2px solid var(--Blueberry);
-    color: var(--Blueberry);
+    border: 2px solid var(--blueberry);
+    color: var(--blueberry);
 }
 
 
@@ -123,12 +122,12 @@ p {
 .button, input[type="submit"] {
     width: 80%;
     padding: 15px;
-    background-color: var(--Veg);
+    background-color: var(--veg);
     color: #fff;
     text-align: center;
     font-size: 1.2em;
     margin: .5em auto;
-    border: 4px outset var(--Toast);
+    border: 4px outset var(--toast);
 }
 
 .button {
@@ -137,13 +136,13 @@ p {
 
 .clipBtn {
     border: 3px solid #000;
-    background-color: var(--Veg);
+    background-color: var(--veg);
     border-radius: 1em;
     display: flex;
     align-items: center;
     font-size: 1.2em;
     padding: .75em;
-    color: var(--White);
+    color: var(--white);
     width: 6em;
     /* height: 1.5em; */
     margin: .5em 0;
@@ -157,30 +156,38 @@ p {
 
 /*----------Hover Styles---------- */
 nav li a:hover {
-    border-bottom: 5px solid var(--Grain);
+    border-bottom: 5px solid var(--grain);
 }
 
 nav li a:active {
-    background-color: var(--Blueberry);
-    color: var(--White);
+    background-color: var(--blueberry);
+    color: var(--white);
 }
 
 .button:hover, input[type="submit"]:hover {
     cursor: pointer;
-    background-color: var(--Grain);
+    background-color: var(--grain);
 }
 
 .icon-tabler-shopping-cart:hover, .icon-tabler-menu-2:hover, footer svg:hover{
-    stroke: var(--Grain);
+    stroke: var(--grain);
+}
+
+footer svg:hover {
+    border-color: var(--grain);
 }
 
 .clipBtn:hover, .clipBtn:active {
-    background-color: var(--Blueberry);
+    background-color: var(--blueberry);
     cursor: pointer;
 }
 
 #shop a:hover img {
-    border-color: var(--Grain);
+    border-color: var(--grain);
+}
+
+#shop a:hover h3 {
+   text-decoration: underline;
 }
 
 /*----------Header Styles---------- */
@@ -275,7 +282,7 @@ nav h2 {
 
 #menuToggle:checked ~ .menu li {
     visibility: visible;
-    border-bottom: 2px solid var(--Toast) ;
+    border-bottom: 8px solid var(--toast) ;
     height: 2em;
     padding: .5em
 }
@@ -292,11 +299,11 @@ section {
 }
 
 #shop, #club {
-    background-color: var(--White);
+    background-color: var(--white);
 }
 #intro, #coupons {
-    background-color: var(--Cranberry);
-    color: var(--White);
+    background-color: var(--cranberry);
+    color: var(--white);
 }
 
 /*----------Intro Styles---------- */
@@ -325,24 +332,26 @@ section {
 
 #categories {
     display: grid;
-    gap: .5em;
+    gap: 2em;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
 }
 
-#shop section {
+#shop section a {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    color: var(--Black);
+    color: var(--black);
 }
 
-#categories h3{
+#categories  a h3{
     text-align: center;
+    color: var(--black);
+    padding-top: .5em;
 }
 
 #categories img {
-    border: 9px solid var(--Toast);
+    border: 12px solid var(--toast);
     border-radius: 50%;
     width: 90%;
     margin: 0;
@@ -423,7 +432,7 @@ section {
     color: #000;
 }
 
-#coupons div + h4 {
+#coupons .expiration {
     grid-row: 2/3;
     grid-column: 2/3;
     text-align: right;
@@ -459,18 +468,18 @@ section {
     padding: 10px;
     margin: .5em 0 2em 0;
     height: 2.5em;
-    border: .25em outset var(--Toast)
+    border: .25em outset var(--toast)
 }
 
 #club input[type="submit"] {
-    font-family: var(--font);
+    font-family: 'Public Sans', sans-serif;
     width: 100%;
     margin: 1em auto;
-    border: 4px outset var(--Toast);
+    border: 4px outset var(--toast);
 }
 
 .required {
-    color: var(--Cranberry);
+    color: var(--cranberry);
 }
 
 /*----------Footer Styles---------- */
@@ -484,7 +493,17 @@ footer h2 {
 }
 
 address {
-    padding: 2em 0;
+    padding-top: 2em;
+}
+
+footer address + a {
+    display: block;
+    padding-bottom: 2em;
+    color: var(--black);
+}
+
+footer address + a:hover {
+    color: var(--white);
 }
 
 footer small{
@@ -502,11 +521,11 @@ footer ul li{
 }
 
 footer svg {
-    stroke: #000;
-    border: 2px solid #000;
+    stroke: var(--black);
+    border: 2px solid var(--black);
     border-radius: 100%;
     background-color: #fff;
-    width: 5%;
+    width: 5.5%;
     height: auto;
     margin: 0;
     padding: .5em;
@@ -640,6 +659,10 @@ footer svg {
         grid-area: p;
         text-align: center;
         width: 75%;
+    }
+
+    #coupons .expiration {
+        font-size: .8em;
     }
 
     #coupons section:nth-of-type(1) {
@@ -816,7 +839,10 @@ footer svg {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
 
+    #categories img {
+        width: 100%;
     }
 
     /* coupons */
@@ -829,13 +855,8 @@ footer svg {
         margin-left: auto;
     }
 
-    #coupons section p {
-        height: .5em;
-    }
-
     #coupons a.button {
         margin: 1em;
-        /* width: 30%; */
     }
 
     /* Club */
