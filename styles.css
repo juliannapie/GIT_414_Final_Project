@@ -69,6 +69,7 @@ body {
     line-height: 1.6em;
     background-color: var(--white);
     min-width: 320px;
+    max-width: 1800px;
 }
 
 h1, h2, h3 {
@@ -97,6 +98,7 @@ a {
 
 p {
     margin: 1em 0;
+    font-size: .75em;
 }
 
 .skip {
@@ -157,6 +159,7 @@ p {
 /*----------Hover Styles---------- */
 nav li a:hover {
     border-bottom: 5px solid var(--grain);
+    padding: .25em;
 }
 
 nav li a:active {
@@ -187,7 +190,7 @@ footer svg:hover {
 }
 
 #shop a:hover h3 {
-   text-decoration: underline;
+    text-decoration: underline;
 }
 
 /*----------Header Styles---------- */
@@ -256,13 +259,12 @@ nav h2 {
     width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: #1F4373;
+    background-color: var(--blueberry);
     z-index: 10;
 }
 
 .menu li {
     text-align: center;
-    margin: .5em;
 }
 
 #menuToggle {
@@ -278,13 +280,14 @@ nav h2 {
     margin: 0;
     padding: 0;
     border: 0;
+
 }
 
 #menuToggle:checked ~ .menu li {
     visibility: visible;
-    border-bottom: 8px solid var(--toast) ;
+    border-bottom: 3px solid var(--white) ;
     height: 2em;
-    padding: .5em
+    padding: .5em;
 }
 
 
@@ -351,7 +354,7 @@ section {
 }
 
 #categories img {
-    border: 12px solid var(--toast);
+    border: 8px solid var(--toast);
     border-radius: 50%;
     width: 90%;
     margin: 0;
@@ -429,7 +432,7 @@ section {
     left: 10px;
     z-index: 30;
     font-weight: bold;
-    color: #000;
+    color: var(--blueberry);
 }
 
 #coupons .expiration {
@@ -515,9 +518,10 @@ footer section:last-of-type h2 {
     height: 0;
 }
 
+
 footer ul li{
     display: inline;
-    padding: .55em;
+    padding: .45em;
 }
 
 footer svg {
@@ -552,6 +556,9 @@ footer svg {
     h2 {
         text-align: center;
     }
+    p {
+        font-size: 1em;
+    }
     body {
         font-size: 1.2em;
     }
@@ -566,7 +573,6 @@ footer svg {
         width: 40%;
         margin: 2em auto;
     }
-
 
 
     /* Nav */
@@ -829,7 +835,8 @@ footer svg {
     }
 
     #AdInfo p {
-        width: 50%;
+        width: 45%;
+        text-align: center;
         padding: 1em;
     }
 
@@ -839,10 +846,6 @@ footer svg {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-    }
-
-    #categories img {
-        width: 100%;
     }
 
     /* coupons */
