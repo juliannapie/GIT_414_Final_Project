@@ -301,14 +301,14 @@ section {
 
 /*----------Intro Styles---------- */
 #intro{
-    background-image: url("images/heroL.png"); 
+    background-image: url("images/hero.png"); 
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
 }
 
 #intro h2 {
-    font-size: 2em
+    font-size: 1.5em;
 }
 
 #AdInfo {
@@ -317,7 +317,6 @@ section {
     background-color: rgba(166, 64, 55, .7);
     padding: 1em;
 }
-
 
 /*----------Shop Categories Styles---------- */
 #shop h2 {
@@ -400,6 +399,10 @@ section {
     width: 60%;
     margin: .5em auto;
     display: block;
+}
+
+#coupons span {
+    font-weight: bold;
 }
 
 #coupons div{
@@ -814,10 +817,6 @@ footer svg {
         flex-direction: row;
         justify-content: space-evenly;
 
-    }
-
-    #shop a.button {
-        /* width: 25%; */
     }
 
     /* coupons */
