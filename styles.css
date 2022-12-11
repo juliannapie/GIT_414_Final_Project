@@ -581,6 +581,7 @@ footer svg {
     /* Intro */
     #intro {
         padding: 3em 0;
+        text-align: center;
     }
 
     #intro h2 {
