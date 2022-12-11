@@ -125,7 +125,7 @@ p {
     width: 80%;
     padding: 15px;
     background-color: var(--veg);
-    color: #fff;
+    color: var(--black);
     text-align: center;
     font-size: 1.2em;
     margin: .5em auto;
@@ -144,13 +144,18 @@ p {
     align-items: center;
     font-size: 1.2em;
     padding: .75em;
-    color: var(--white);
+    color: var(--black);
     width: 6em;
     /* height: 1.5em; */
     margin: .5em 0;
 }
 
+.icon-tabler-scissors {
+    stroke: var(--black);
+}
+
 .clipBtn svg {
+
     margin-right: .5em;
     height: 1.5em;
     width: 1.5em;
@@ -177,13 +182,20 @@ nav li a:active {
 }
 
 footer svg:hover {
+    background-color: var(--black);
     border-color: var(--grain);
 }
 
 .clipBtn:hover, .clipBtn:active {
     background-color: var(--blueberry);
+    color: var(--white);
     cursor: pointer;
 }
+
+.clipBtn:hover .icon-tabler-scissors {
+    stroke: var(--white);
+}
+
 
 #shop a:hover img {
     border-color: var(--grain);
@@ -489,6 +501,7 @@ section {
 footer {
     padding: .5em 2em;
     background-color: rgba(31, 67, 115, .7);
+    color: var(--white);
 } 
 
 footer h2 {
@@ -502,11 +515,13 @@ address {
 footer address + a {
     display: block;
     padding-bottom: 2em;
-    color: var(--black);
+    color: var(--white);
 }
 
 footer address + a:hover {
-    color: var(--white);
+    color: var(--black);
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 footer small{
