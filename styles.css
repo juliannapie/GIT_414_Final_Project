@@ -69,7 +69,6 @@ body {
     line-height: 1.6em;
     background-color: var(--white);
     min-width: 320px;
-    max-width: 1800px;
 }
 
 h1, h2, h3 {
